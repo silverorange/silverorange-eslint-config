@@ -1,0 +1,7 @@
+/.idea
+/node_modules/
+/packages/*/node_modules/
+.DS_Store
+
+.env.local
+.env.*.local
