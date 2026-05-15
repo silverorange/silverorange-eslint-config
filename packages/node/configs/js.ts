@@ -1,0 +1,30 @@
+import type { Config } from 'eslint/config';
+
+export const jsConfig = {
+  rules: {
+    'constructor-super': 'error',
+    curly: 'error',
+    'dot-notation': 'error',
+    'guard-for-in': 'error',
+    'new-parens': 'error',
+    'no-bitwise': 'error',
+    'no-caller': 'error',
+    'no-cond-assign': 'error',
+    'no-console': 'warn',
+    'no-debugger': 'error',
+    'no-empty': 'error',
+    'no-empty-function': 'error',
+    'no-new-wrappers': 'error',
+    'no-throw-literal': 'error',
+    'no-undef-init': 'error',
+    'no-unsafe-finally': 'error',
+    'no-unused-labels': 'error',
+    'object-shorthand': 'error',
+    'one-var': ['error', 'never'],
+    'prefer-const': 'error',
+    radix: 'error',
+    'use-isnan': 'error',
+    'no-shadow': 'error',
+    'no-unused-expressions': 'error',
+  },
+} satisfies Config;

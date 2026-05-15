@@ -1,0 +1,14 @@
+{
+  "name": "@silverorange/eslint-config-react",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@silverorange/eslint-config-node": "workspace:*"
+  },
+  "peerDependencies": {
+    "@eslint/js": "^10.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1"
+  }
+}
