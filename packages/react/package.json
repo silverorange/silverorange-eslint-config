@@ -2,6 +2,11 @@
   "name": "@silverorange/eslint-config-react",
   "version": "1.0.0",
   "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
   "dependencies": {
     "@silverorange/eslint-config-node": "workspace:*"
   },
