@@ -11,7 +11,7 @@ This configuration should be used for projects using React. This extends:
 
 ```sh
 # Add required ESLint peer dependency
-pnpm add -D eslint@^10.4.0
+pnpm add -D eslint@^9.39.4
 
 # Add package dependency
 pnpm add -D @silverorange/eslint-config-react
