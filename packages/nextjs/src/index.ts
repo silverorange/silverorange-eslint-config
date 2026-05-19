@@ -14,8 +14,8 @@ function hasNoNextPlugin(config: Linter.Config): boolean {
   );
 }
 
-const reactWithoutNextPlugins = (reactConfig as Linter.Config[]).filter(
-  hasNoNextPlugin
+const reactConfigWithoutNextPlugins = (reactConfig as Linter.Config[]).filter(
+  hasNoNextPlugin,
 );
 
-export default defineConfig([reactWithoutNextPlugins, nextVitals]);
+export default defineConfig([reactConfigWithoutNextPlugins, nextVitals]);
