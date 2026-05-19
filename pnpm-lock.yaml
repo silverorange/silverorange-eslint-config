@@ -12,6 +12,12 @@ importers:
         specifier: ^6.0.3
         version: 6.0.3
     devDependencies:
+      '@silverorange/eslint-config-node':
+        specifier: workspace:*
+        version: link:packages/node
+      eslint:
+        specifier: ^10.4.0
+        version: 10.4.0
       prettier:
         specifier: ^3.8.3
         version: 3.8.3
