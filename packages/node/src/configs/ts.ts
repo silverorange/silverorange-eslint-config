@@ -5,7 +5,6 @@ export const tsConfig = {
   rules: {
     // disable JS rules that are overridden by Typescript variants
     'no-shadow': 'off',
-    'no-throw-literal': 'off',
     'no-unused-expressions': 'off',
     'no-unused-vars': 'off',
 
@@ -14,9 +13,6 @@ export const tsConfig = {
 
     /** disallow CJS require() in favour of ESM import */
     '@typescript-eslint/no-require-imports': 'error',
-
-    /** only throw Error objects, not plain strings or objects */
-    '@typescript-eslint/only-throw-error': 'error',
 
     /** disallow variables that shadow variables in outer scope */
     '@typescript-eslint/no-shadow': 'error',
