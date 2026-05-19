@@ -25,20 +25,17 @@
     "prepack": "pnpm run build"
   },
   "dependencies": {
-    "@silverorange/eslint-config-node": "workspace:*"
-  },
-  "peerDependencies": {
-    "eslint": "catalog:",
+    "@silverorange/eslint-config-node": "workspace:*",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.1.1"
   },
+  "peerDependencies": {
+    "eslint": "catalog:"
+  },
   "devDependencies": {
     "@types/eslint-plugin-jsx-a11y": "^6.10.1",
     "eslint": "catalog:",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^7.1.1",
     "typescript": "catalog:"
   }
 }

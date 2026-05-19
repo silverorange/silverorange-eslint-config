@@ -24,15 +24,14 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@silverorange/eslint-config-react": "workspace:*"
+    "@silverorange/eslint-config-react": "workspace:*",
+    "eslint-config-next": "^16.2.6"
   },
   "peerDependencies": {
-    "eslint": "catalog:",
-    "eslint-config-next": "^16.2.6"
+    "eslint": "catalog:"
   },
   "devDependencies": {
     "eslint": "catalog:",
-    "eslint-config-next": "^16.2.6",
     "typescript": "catalog:"
   }
 }
