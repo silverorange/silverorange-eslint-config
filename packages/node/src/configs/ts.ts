@@ -56,8 +56,6 @@ export const tsConfig = {
       { assertionStyle: 'as' },
     ],
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
-    '@typescript-eslint/no-empty-interface': 'error',
-    '@typescript-eslint/no-var-requires': 'error',
     '@typescript-eslint/prefer-function-type': 'error',
     '@typescript-eslint/unified-signatures': 'error',
     '@typescript-eslint/no-unused-vars': [
