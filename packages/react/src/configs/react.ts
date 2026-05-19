@@ -1,6 +1,7 @@
 import type { Config } from 'eslint/config';
 
 export const reactConfig = {
+  files: ['**/*.jsx', '**/*.tsx'],
   rules: {
     /** disallow unnecessary fragment wrappers <>...</> */
     'react/jsx-no-useless-fragment': 'error',
