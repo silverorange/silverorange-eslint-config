@@ -4,19 +4,24 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+catalogs:
+  default:
+    eslint:
+      specifier: ^10.4.0
+      version: 10.4.0
+    typescript:
+      specifier: ^6.0.3
+      version: 6.0.3
+
 importers:
 
   .:
-    dependencies:
-      typescript:
-        specifier: ^6.0.3
-        version: 6.0.3
     devDependencies:
       '@silverorange/eslint-config-node':
         specifier: workspace:*
         version: link:packages/node
       eslint:
-        specifier: ^10.4.0
+        specifier: 'catalog:'
         version: 10.4.0
       prettier:
         specifier: ^3.8.3
@@ -29,11 +34,14 @@ importers:
         version: link:../react
     devDependencies:
       eslint:
-        specifier: ^10.4.0
+        specifier: 'catalog:'
         version: 10.4.0
       eslint-config-next:
         specifier: ^16.2.6
         version: 16.2.6(eslint@10.4.0)(typescript@6.0.3)
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
 
   packages/node:
     devDependencies:
@@ -41,11 +49,14 @@ importers:
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.4.0)
       eslint:
-        specifier: ^10.4.0
+        specifier: 'catalog:'
         version: 10.4.0
       eslint-config-prettier:
         specifier: ^10.1.8
         version: 10.1.8(eslint@10.4.0)
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
       typescript-eslint:
         specifier: ^8.59.3
         version: 8.59.3(eslint@10.4.0)(typescript@6.0.3)
@@ -60,7 +71,7 @@ importers:
         specifier: ^6.10.1
         version: 6.10.1
       eslint:
-        specifier: ^10.4.0
+        specifier: 'catalog:'
         version: 10.4.0
       eslint-plugin-jsx-a11y:
         specifier: ^6.10.2
@@ -71,6 +82,9 @@ importers:
       eslint-plugin-react-hooks:
         specifier: ^7.1.1
         version: 7.1.1(eslint@10.4.0)
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
 
 packages:
 

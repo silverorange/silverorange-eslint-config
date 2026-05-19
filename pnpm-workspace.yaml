@@ -1,4 +1,9 @@
 packages:
-  - "packages/*"
+  - 'packages/*'
+
+catalog:
+  eslint: '^10.4.0'
+  typescript: '^6.0.3'
+
 allowBuilds:
   unrs-resolver: false
