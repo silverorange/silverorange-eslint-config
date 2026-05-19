@@ -1,0 +1,21 @@
+{
+  "name": "@silverorange/eslint-config-nextjs",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@silverorange/eslint-config-react": "workspace:*"
+  },
+  "peerDependencies": {
+    "eslint": "^10.4.0",
+    "eslint-config-next": "^16.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^10.4.0",
+    "eslint-config-next": "^16.2.6"
+  }
+}
