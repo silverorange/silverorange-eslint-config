@@ -12,4 +12,11 @@ export default defineConfig([
   reactHooks.configs.flat.recommended,
   jsxA11y.flatConfigs.recommended,
   reactConfig,
+  {
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
+  },
 ]);
