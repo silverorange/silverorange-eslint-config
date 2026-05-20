@@ -5,7 +5,7 @@ import eslintConfigPrettier from 'eslint-config-prettier';
 import { jsConfig } from './configs/js.js';
 import { tsConfig } from './configs/ts.js';
 
-export default defineConfig([
+export const config = defineConfig([
   js.configs.recommended,
   tseslint.configs.recommended,
   eslintConfigPrettier,

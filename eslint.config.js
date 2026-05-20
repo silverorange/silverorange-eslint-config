@@ -1,8 +1,4 @@
 import { defineConfig, globalIgnores } from 'eslint/config';
+import { config } from '@silverorange/eslint-config-node';
 
-import nodeConfig from '@silverorange/eslint-config-node';
-
-export default defineConfig([
-  nodeConfig,
-  globalIgnores(['packages/*/dist/**/*']),
-]);
+export default defineConfig([config, globalIgnores(['packages/*/dist/**/*'])]);

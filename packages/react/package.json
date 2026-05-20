@@ -1,9 +1,19 @@
 {
   "name": "@silverorange/eslint-config-react",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "type": "module",
-  "main": "src/index.ts",
   "types": "src/index.ts",
+  "main": "src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./src/index.ts"
+    },
+    "./config": {
+      "types": "./src/configs/react.ts",
+      "import": "./src/configs/react.ts"
+    }
+  },
   "files": [
     "README.md",
     "dist/"
@@ -18,8 +28,18 @@
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",
+    "types": "dist/index.d.ts",
     "main": "dist/index.js",
-    "types": "dist/index.d.ts"
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js"
+      },
+      "./config": {
+        "types": "./dist/configs/react.d.ts",
+        "import": "./dist/configs/react.js"
+      }
+    }
   },
   "scripts": {
     "build": "tsc",

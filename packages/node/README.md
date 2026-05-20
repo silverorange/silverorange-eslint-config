@@ -22,10 +22,9 @@ Then create an `eslint.config.js` in the project root:
 
 ```js
 import { defineConfig } from 'eslint/config';
+import { nodeConfig } from '@silverorange/eslint-config-node';
 
-import config from '@silverorange/eslint-config-node';
-
-export default defineConfig([config]);
+export default defineConfig([nodeConfig]);
 ```
 
 Lastly, add a `lint` script to `package.json`:

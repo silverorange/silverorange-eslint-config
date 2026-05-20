@@ -23,8 +23,7 @@ Then create an `eslint.config.js` in the project root:
 
 ```js
 import { defineConfig } from 'eslint/config';
-
-import config from '@silverorange/eslint-config-react';
+import { config } from '@silverorange/eslint-config-react';
 
 export default defineConfig([config]);
 ```

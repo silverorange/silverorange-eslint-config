@@ -29,6 +29,9 @@ importers:
 
   packages/nextjs:
     dependencies:
+      '@silverorange/eslint-config-node':
+        specifier: workspace:*
+        version: link:../node
       '@silverorange/eslint-config-react':
         specifier: workspace:*
         version: link:../react
