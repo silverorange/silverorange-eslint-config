@@ -22,7 +22,8 @@
     "types": "dist/index.d.ts"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepack": "pnpm run build"
   },
   "dependencies": {
     "@eslint/js": "^9.39.4",
