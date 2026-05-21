@@ -31,6 +31,7 @@ export const tsConfig = {
       {
         selector: ['property', 'variable'],
         format: ['camelCase', 'UPPER_CASE', 'PascalCase', 'snake_case'],
+        leadingUnderscore: 'allow',
       },
       {
         // Allow any format in object literals (like this one)
@@ -38,10 +39,21 @@ export const tsConfig = {
         format: null,
       },
       {
-        selector: ['function', 'parameter'],
-        format: ['camelCase', 'PascalCase', 'snake_case'],
+        selector: ['function'],
+        format: ['camelCase', 'PascalCase'],
       },
       { selector: 'typeLike', format: ['PascalCase'] },
+      {
+        selector: ['parameter'],
+        modifiers: ['unused'],
+        format: ['camelCase', 'snake_case'],
+        leadingUnderscore: 'require', // force _ on unused params
+      },
+      {
+        selector: ['parameter'],
+        format: ['camelCase', 'snake_case'],
+        leadingUnderscore: 'forbid', // forbid _ on used params
+      },
     ],
     '@typescript-eslint/explicit-member-accessibility': [
       'error',
@@ -61,6 +73,7 @@ export const tsConfig = {
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
+        args: 'after-used',
         argsIgnorePattern: '^_',
         destructuredArrayIgnorePattern: '^_',
         ignoreRestSiblings: true,

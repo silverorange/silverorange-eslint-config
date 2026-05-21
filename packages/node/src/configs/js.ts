@@ -38,6 +38,7 @@ export const jsConfig = {
     'no-unused-vars': [
       'error',
       {
+        args: 'after-used',
         argsIgnorePattern: '^_',
         destructuredArrayIgnorePattern: '^_',
         ignoreRestSiblings: true,
