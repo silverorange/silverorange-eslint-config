@@ -18,4 +18,10 @@ export const config = defineConfig([
       },
     },
   },
+  // Turn off type-aware rules for JS files.
+  // See https://typescript-eslint.io/troubleshooting/typed-linting/#how-can-i-disable-type-aware-linting-for-a-set-of-files
+  {
+    files: ['**/*.js', '**/*.mjs', '**/*.cjs'],
+    ...tseslint.configs.disableTypeChecked,
+  },
 ]);
