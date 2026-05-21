@@ -7,8 +7,15 @@ import { tsConfig } from './configs/ts.js';
 
 export const config = defineConfig([
   js.configs.recommended,
-  tseslint.configs.recommended,
+  tseslint.configs.recommendedTypeChecked,
   eslintConfigPrettier,
   jsConfig,
   tsConfig,
+  {
+    languageOptions: {
+      parserOptions: {
+        projectService: true,
+      },
+    },
+  },
 ]);
