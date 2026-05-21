@@ -10,7 +10,10 @@ const tsFiles = ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'];
 export const config = defineConfig([
   js.configs.recommended,
   tseslint.configs.recommended,
-  { files: tsFiles, ...tseslint.configs.recommendedTypeCheckedOnly },
+  tseslint.configs.recommendedTypeCheckedOnly.map((tsConfig) => ({
+    files: tsFiles,
+    ...tsConfig,
+  })),
   eslintConfigPrettier,
   jsConfig,
   { files: tsFiles, ...tsConfig },
