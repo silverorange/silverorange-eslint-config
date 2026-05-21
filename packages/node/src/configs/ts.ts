@@ -30,7 +30,7 @@ export const tsConfig = {
       },
       {
         selector: ['property', 'variable'],
-        format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
+        format: ['camelCase', 'UPPER_CASE', 'PascalCase', 'snake_case'],
       },
       {
         // Allow any format in object literals (like this one)
@@ -39,7 +39,7 @@ export const tsConfig = {
       },
       {
         selector: ['function', 'parameter'],
-        format: ['camelCase', 'PascalCase'],
+        format: ['camelCase', 'PascalCase', 'snake_case'],
       },
       { selector: 'typeLike', format: ['PascalCase'] },
     ],
