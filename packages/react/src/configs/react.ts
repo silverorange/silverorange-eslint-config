@@ -1,6 +1,7 @@
 import type { Config } from 'eslint/config';
 
 export const reactConfig = {
+  name: 'silverorange/react',
   files: ['**/*.jsx', '**/*.tsx'],
   rules: {
     /** disallow unnecessary fragment wrappers <>...</> */

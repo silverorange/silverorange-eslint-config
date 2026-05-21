@@ -1,6 +1,7 @@
 import type { Config } from 'eslint/config';
 
 export const tsConfig = {
+  name: 'silverorange/typescript',
   files: ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'],
   rules: {
     // disable JS rules that are overridden by Typescript variants

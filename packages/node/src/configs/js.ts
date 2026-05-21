@@ -1,6 +1,7 @@
 import type { Config } from 'eslint/config';
 
 export const jsConfig = {
+  name: 'silverorange/javascript',
   rules: {
     /** require braces for all control statements */
     curly: 'error',
