@@ -4,6 +4,7 @@ import tseslint from 'typescript-eslint';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import { jsConfig } from './configs/js.js';
 import { tsConfig } from './configs/ts.js';
+import { testsConfig } from './configs/tests.js';
 
 const tsFiles = ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'];
 
@@ -17,6 +18,7 @@ export const config = defineConfig([
   eslintConfigPrettier,
   jsConfig,
   { files: tsFiles, ...tsConfig },
+  testsConfig,
   {
     languageOptions: {
       parserOptions: {
