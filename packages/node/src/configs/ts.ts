@@ -54,6 +54,11 @@ export const tsConfig = {
         format: ['camelCase', 'snake_case'],
         leadingUnderscore: 'forbid', // forbid _ on used params
       },
+      {
+        // Allow UPPER_CASE for enum members
+        selector: 'enumMember',
+        format: ['UPPER_CASE'],
+      },
     ],
     '@typescript-eslint/explicit-member-accessibility': [
       'error',
