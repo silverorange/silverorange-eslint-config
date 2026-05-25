@@ -5,20 +5,9 @@ export const tsConfig = {
   rules: {
     // disable JS rules that are overridden by Typescript variants
     'no-shadow': 'off',
-    'no-unused-expressions': 'off',
-    'no-unused-vars': 'off',
-
-    /** disallow the any type */
-    '@typescript-eslint/no-explicit-any': 'error',
-
-    /** disallow CJS require() in favour of ESM import */
-    '@typescript-eslint/no-require-imports': 'error',
 
     /** disallow variables that shadow variables in outer scope */
     '@typescript-eslint/no-shadow': 'error',
-
-    /** disallow expressions that have no effect */
-    '@typescript-eslint/no-unused-expressions': 'error',
 
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
