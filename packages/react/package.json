@@ -1,6 +1,6 @@
 {
   "name": "@silverorange/eslint-config-react",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "type": "module",
   "types": "src/index.ts",
   "main": "src/index.ts",
@@ -43,7 +43,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "prepack": "pnpm run build"
+    "clean": "rm -rf dist && rm tsconfig.tsbuildinfo",
+    "prepack": "pnpm run clean && pnpm run build"
   },
   "dependencies": {
     "@silverorange/eslint-config-node": "workspace:*",
