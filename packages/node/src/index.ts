@@ -10,16 +10,19 @@ const tsFiles = ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'];
 
 export const config = defineConfig([
   js.configs.recommended,
-  tseslint.configs.recommended,
-  tseslint.configs.recommendedTypeCheckedOnly.map((tsConfig) => ({
+  tseslint.configs.recommendedTypeChecked.map((tsConfig) => ({
     files: tsFiles,
     ...tsConfig,
   })),
   eslintConfigPrettier,
   jsConfig,
-  { files: tsFiles, ...tsConfig },
+  {
+    files: tsFiles,
+    ...tsConfig,
+  },
   testsConfig,
   {
+    files: tsFiles,
     languageOptions: {
       parserOptions: {
         projectService: true,
