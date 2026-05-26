@@ -2,7 +2,7 @@ import type { Config } from 'eslint/config';
 
 /** This config should NOT contain any type-aware linting as it will be applied to all files. For example, the naming convention rule should apply to both TypeScript and JavaScript. */
 export const tsUniversalConfig = {
-  name: 'silverorange/typescript-base',
+  name: 'silverorange/typescript-universal',
   rules: {
     // disable JS rules that are overridden by Typescript variants
     'no-shadow': 'off',
