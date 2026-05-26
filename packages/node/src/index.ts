@@ -11,18 +11,20 @@ import { defineGlobals } from './defineGlobals.js';
 
 export const config = defineConfig([
   js.configs.recommended,
-  // Make sure type-aware rules are scoped to TypeScript files. They are not
-  // scoped by default, and will cause issues on projects with mixed TypeScript
-  // and JavaScript source files.
-  tseslint.configs.recommendedTypeChecked.map(({ name, ...rest }) =>
-    name === 'typescript-eslint/recommended-type-checked'
-      ? {
-          files: tsFilesPattern,
-          name,
-          ...rest,
-        }
-      : { name, ...rest },
-  ),
+  tseslint.configs.recommended,
+  tseslint.configs.recommendedTypeCheckedOnly
+    // Filter out only the type-aware rules. The base config will be added by
+    // the standard recommended set above.
+    .filter(
+      ({ name }) => name === 'typescript-eslint/recommended-type-checked-only',
+    )
+    // Make sure type-aware rules are scoped to TypeScript files. They are not
+    // scoped by default, and will cause issues on projects with mixed
+    // TypeScript and JavaScript source files.
+    .map((tsConfig) => ({
+      files: tsFilesPattern,
+      ...tsConfig,
+    })),
   {
     name: 'eslint-config-prettier',
     ...eslintConfigPrettier,
