@@ -2,7 +2,7 @@
 
 This configuration should be used for projects built on Next.js. This extends:
 
-- the [silverorange React configuration](../../react/README.md), and
+- the [silverorange React configuration](../react/README.md), and
 - the Next.js [Core Web Vitals configuration](https://nextjs.org/docs/pages/api-reference/config/eslint#with-core-web-vitals).
 
 # Installation

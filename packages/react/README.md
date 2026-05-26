@@ -2,7 +2,7 @@
 
 This configuration should be used for projects using React. This extends:
 
-- the [silverorange Node configuration](../../node/README.md),
+- the [silverorange Node configuration](../node/README.md),
 - the [React Hooks recommended configuration](https://react.dev/reference/eslint-plugin-react-hooks),
 - the [JSX Accessibility recommended configuration](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y#shareable-configs), and
 - the [React ESLint recommended configuration](https://github.com/jsx-eslint/eslint-plugin-react/#shareable-configs).
