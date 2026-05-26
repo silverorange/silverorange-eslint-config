@@ -7,6 +7,7 @@ import { tsUniversalConfig } from './configs/tsUniversal.js';
 import { testsConfig } from './configs/tests.js';
 import { tsFilesPattern } from './configs/tsFilesPattern.js';
 import { tsTypeScriptOnlyConfig } from './configs/tsTypeScriptOnly.js';
+import { defineGlobals } from './defineGlobals.js';
 
 export const config = defineConfig([
   js.configs.recommended,
@@ -31,3 +32,5 @@ export const config = defineConfig([
   tsTypeScriptOnlyConfig,
   testsConfig,
 ]);
+
+export { defineGlobals };
