@@ -2,7 +2,10 @@ import { defineConfig } from 'eslint/config';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
-import { config as nodeConfig } from '@silverorange/eslint-config-node';
+import {
+  config as nodeConfig,
+  defineGlobals,
+} from '@silverorange/eslint-config-node';
 import { reactConfig } from './configs/react.js';
 
 export const config = defineConfig([
@@ -20,3 +23,5 @@ export const config = defineConfig([
     },
   },
 ]);
+
+export { defineGlobals };
