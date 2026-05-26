@@ -1,6 +1,6 @@
 {
   "name": "@silverorange-inc/eslint-config-react",
-  "version": "2.4.0",
+  "version": "1.0.0",
   "type": "module",
   "types": "src/index.ts",
   "main": "src/index.ts",
