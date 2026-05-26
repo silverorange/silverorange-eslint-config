@@ -13,7 +13,7 @@ This configuration should be used for projects built on Node.js. This extends:
 pnpm add -D eslint@^9.39.4
 
 # Add package dependency
-pnpm add -D @silverorange/eslint-config-node
+pnpm add -D @silverorange-inc/eslint-config-node
 ```
 
 # Configuration
@@ -22,7 +22,7 @@ Then create an `eslint.config.js` in the project root:
 
 ```js
 import { defineConfig } from 'eslint/config';
-import { nodeConfig } from '@silverorange/eslint-config-node';
+import { nodeConfig } from '@silverorange-inc/eslint-config-node';
 
 export default defineConfig([nodeConfig]);
 ```

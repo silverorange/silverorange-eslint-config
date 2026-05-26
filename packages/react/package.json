@@ -1,5 +1,5 @@
 {
-  "name": "@silverorange/eslint-config-react",
+  "name": "@silverorange-inc/eslint-config-react",
   "version": "2.4.0",
   "type": "module",
   "types": "src/index.ts",
@@ -27,7 +27,7 @@
     "directory": "packages/react"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com",
+    "access": "public",
     "types": "dist/index.d.ts",
     "main": "dist/index.js",
     "exports": {
@@ -47,7 +47,7 @@
     "prepack": "pnpm run clean && pnpm run build"
   },
   "dependencies": {
-    "@silverorange/eslint-config-node": "workspace:*",
+    "@silverorange-inc/eslint-config-node": "workspace:*",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.1.1"

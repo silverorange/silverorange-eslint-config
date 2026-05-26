@@ -1,5 +1,5 @@
 {
-  "name": "@silverorange/eslint-config-nextjs",
+  "name": "@silverorange-inc/eslint-config-next",
   "version": "2.4.1",
   "type": "module",
   "main": "src/index.ts",
@@ -14,10 +14,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/silverorange/silverorange-eslint-config.git",
-    "directory": "packages/nextjs"
+    "directory": "packages/next"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com",
+    "access": "public",
     "main": "dist/index.js",
     "types": "dist/index.d.ts"
   },
@@ -27,8 +27,8 @@
     "prepack": "pnpm run clean && pnpm run build"
   },
   "dependencies": {
-    "@silverorange/eslint-config-node": "workspace:*",
-    "@silverorange/eslint-config-react": "workspace:*",
+    "@silverorange-inc/eslint-config-node": "workspace:*",
+    "@silverorange-inc/eslint-config-react": "workspace:*",
     "eslint-config-next": "^16.2.6"
   },
   "peerDependencies": {

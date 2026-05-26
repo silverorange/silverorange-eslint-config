@@ -14,7 +14,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@silverorange/eslint-config-node": "workspace:*",
+    "@silverorange-inc/eslint-config-node": "workspace:*",
     "eslint": "catalog:",
     "prettier": "^3.8.3"
   },

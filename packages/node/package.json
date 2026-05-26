@@ -1,9 +1,13 @@
 {
-  "name": "@silverorange/eslint-config-node",
+  "name": "@silverorange-inc/eslint-config-node",
   "version": "2.4.0",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./dist/index.js"
+    }
+  },
   "files": [
     "README.md",
     "dist/"
@@ -17,7 +21,7 @@
     "directory": "packages/node"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com",
+    "access": "public",
     "main": "dist/index.js",
     "types": "dist/index.d.ts"
   },

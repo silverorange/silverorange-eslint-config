@@ -14,7 +14,7 @@ This configuration should be used for projects using React. This extends:
 pnpm add -D eslint@^9.39.4
 
 # Add package dependency
-pnpm add -D @silverorange/eslint-config-react
+pnpm add -D @silverorange-inc/eslint-config-react
 ```
 
 # Configuration
@@ -23,7 +23,7 @@ Then create an `eslint.config.js` in the project root:
 
 ```js
 import { defineConfig } from 'eslint/config';
-import { config } from '@silverorange/eslint-config-react';
+import { config } from '@silverorange-inc/eslint-config-react';
 
 export default defineConfig([config]);
 ```
