@@ -6,6 +6,6 @@ import {
 } from '@silverorange/eslint-config-node';
 import { reactConfig } from '@silverorange/eslint-config-react/config';
 
-export const config = defineConfig([nodeConfig, nextVitals, reactConfig]);
+export const config = defineConfig([nextVitals, nodeConfig, reactConfig]);
 
 export { defineGlobals };
