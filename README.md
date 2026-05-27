@@ -5,6 +5,6 @@ standards that should apply across all projects.
 
 # Configurations
 
-- [Node.js](./packages/node/README.md)
-- [React](./packages/react/README.md)
-- [Next.js](./packages/nextjs/README.md)
+- [Node.js](packages/node/README.md)
+- [React](packages/react/README.md)
+- [Next.js](packages/nextjs/README.md)
