@@ -10,4 +10,14 @@ export const tsTypeScriptOnlyConfig = {
       projectService: true,
     },
   },
+  rules: {
+    '@typescript-eslint/explicit-member-accessibility': [
+      'error',
+      {
+        overrides: {
+          constructors: 'no-public',
+        },
+      },
+    ],
+  },
 } satisfies Config;

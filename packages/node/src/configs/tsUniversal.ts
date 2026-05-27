@@ -49,14 +49,6 @@ export const tsUniversalConfig = {
         format: ['PascalCase'],
       },
     ],
-    '@typescript-eslint/explicit-member-accessibility': [
-      'error',
-      {
-        overrides: {
-          constructors: 'no-public',
-        },
-      },
-    ],
     '@typescript-eslint/consistent-type-assertions': [
       'error',
       { assertionStyle: 'as' },
