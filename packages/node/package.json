@@ -1,6 +1,6 @@
 {
   "name": "@silverorange-inc/eslint-config-node",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "exports": {
     ".": {
@@ -13,7 +13,7 @@
     "dist/"
   ],
   "engines": {
-    "node": "^22.14.0"
+    "node": ">=22.14.0"
   },
   "repository": {
     "type": "git",

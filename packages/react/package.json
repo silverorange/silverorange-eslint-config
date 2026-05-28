@@ -1,6 +1,6 @@
 {
   "name": "@silverorange-inc/eslint-config-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "types": "src/index.ts",
   "main": "src/index.ts",
@@ -19,7 +19,7 @@
     "dist/"
   ],
   "engines": {
-    "node": "^22.14.0"
+    "node": ">=22.14.0"
   },
   "repository": {
     "type": "git",
