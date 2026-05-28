@@ -6,6 +6,7 @@ export const tsUniversalConfig = {
   rules: {
     // disable JS rules that are overridden by Typescript variants
     'no-shadow': 'off',
+    'no-unused-vars': 'off',
 
     /** disallow variables that shadow variables in outer scope */
     '@typescript-eslint/no-shadow': 'error',
