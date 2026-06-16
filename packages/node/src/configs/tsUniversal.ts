@@ -42,6 +42,12 @@ export const tsUniversalConfig = {
       },
       {
         selector: ['parameter'],
+        modifiers: ['destructured'],
+        format: ['camelCase', 'snake_case', 'PascalCase'],
+        leadingUnderscore: 'forbid', // forbid _ on destructured params
+      },
+      {
+        selector: ['parameter'],
         format: ['camelCase', 'snake_case'],
         leadingUnderscore: 'forbid', // forbid _ on used params
       },
